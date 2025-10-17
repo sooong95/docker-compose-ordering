@@ -67,10 +67,6 @@ services:
     container_name: sj-ordering-service
     ports:
       - "8083:8080"
-    depends_on:
-      - sj-gateway
-      - sj-ordering-db
-      - sj-config-server
 
 volumes:
   rabbitmq_data:
